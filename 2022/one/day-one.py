@@ -2,11 +2,12 @@ def open_input_file():
     inputFile = open("input.txt", "r")
     inputString = inputFile.read()
     inputFile.close()
-    return inputString.split('\n\n')
+    return inputString
 
-def find_highest_num_total(inputList):
+def find_highest_num_total(inputString):
     total = 0
     totalList = []
+    inputList = inputString.split('\n\n')
 
     for section in inputList:
         numList = section.split('\n')
@@ -22,7 +23,7 @@ def find_highest_num_total(inputList):
     print('Total of those three elves: ' + str(totalList[0] + totalList[1] + totalList[2]))
 
 def main():
-    inputList = open_input_file()
-    find_highest_num_total(inputList)
+    inputString = open_input_file()
+    find_highest_num_total(inputString)
 
 main()

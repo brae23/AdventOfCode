@@ -1,2 +1,6 @@
-# AdventOfCode2022
-Advent of Code 2022 Repository
+# AdventOfCode
+Advent of Code Repository
+
+# AdventOfCode 2022
+Day 1 - Python
+Day 2 - Python
